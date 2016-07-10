@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en-ru">
+
+<head th:replace="views/fragments/head :: head"></head>
+
+<body ng-app="myApp">
+
+<nav th:replace="views/fragments/header :: header"></nav>
+
+<main>
+    <ng-view></ng-view>
+</main>
+
+<footer th:replace="views/fragments/footer :: footer"></footer>
+
+</body>
+</html>

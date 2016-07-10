@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en-ru">
+<head th:replace="admin/fragments/head_admin :: head_admin">
+
+</head>
+
+<body ng-app="myAdmin">
+
+<nav th:replace="admin/fragments/header_admin :: header_admin"></nav>
+
+<main>
+    <div class="section white">
+        <div class="row">
+            <div class="col s12 l3 m3" th:replace="admin/fragments/menu_admin :: menu_admin"></div>
+            <div class="col s12 l9 m9">
+                <ng-view></ng-view>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer th:replace="admin/fragments/footer_admin :: footer_admin"></footer>
+
+</body>
+</html>
