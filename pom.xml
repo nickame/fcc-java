@@ -4,7 +4,7 @@
 
   <modelVersion>4.0.0</modelVersion>
   <groupId>web</groupId>
-  <artifactId>WebApp</artifactId>
+  <artifactId>webapp</artifactId>
 
   <packaging>war</packaging>
 

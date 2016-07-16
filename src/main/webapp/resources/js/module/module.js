@@ -23,6 +23,20 @@ var myApp = angular.module('myApp', ["ngRoute"]).config(function ($routeProvider
         {
             templateUrl: './info.html',
             controller: 'infoController'
+        });    
+    
+    // ************  Login page  ******************
+    $routeProvider.when('/login',
+        {
+            templateUrl: './login.html',
+            controller: 'loginController'
+        });
+
+    // ************  Sing Up page  ******************
+    $routeProvider.when('/singup',
+        {
+            templateUrl: './singup.html',
+            controller: 'singupController'
         });
 
     // ************  Default Page  ******************

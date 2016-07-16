@@ -33,7 +33,7 @@ public class HomeControllerTest extends BaseConfigTest {
     //Test: public String index_GET()
     @SneakyThrows
     @Test
-    public void test_index_GET() throws Exception {
+    public void test_index_GET() {
         this.mockMvc.perform(get("/").session(session)
                 .accept(MediaType.TEXT_HTML))
                 .andExpect(status().isOk())
@@ -43,7 +43,7 @@ public class HomeControllerTest extends BaseConfigTest {
     //Test: public String home_GET()
     @SneakyThrows
     @Test
-    public void test_home_GET() throws Exception {
+    public void test_home_GET() {
         this.mockMvc.perform(get("/home").session(session)
                 .accept(MediaType.TEXT_HTML))
                 .andExpect(status().isOk())
@@ -53,7 +53,7 @@ public class HomeControllerTest extends BaseConfigTest {
     //Test: public String info_GET()
     @SneakyThrows
     @Test
-    public void test_info_GET() throws Exception {
+    public void test_info_GET() {
         this.mockMvc.perform(get("/info").session(session)
                 .accept(MediaType.TEXT_HTML))
                 .andExpect(status().isOk())
@@ -63,7 +63,7 @@ public class HomeControllerTest extends BaseConfigTest {
     //Test: public String contacts_GET()
     @SneakyThrows
     @Test
-    public void test_contacts_GET() throws Exception {
+    public void test_contacts_GET() {
         this.mockMvc.perform(get("/contacts").session(session)
                 .accept(MediaType.TEXT_HTML))
                 .andExpect(status().isOk())

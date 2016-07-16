@@ -23,6 +23,14 @@ public class HomeController {
         return "views/info";
     }
 
+    @RequestMapping(path = "/login", method = RequestMethod.GET)
+    public String singIn_GET(){
+        return "views/login";
+    }
+
+    @RequestMapping(path = "/singup", method = RequestMethod.GET)
+    public String singUn_GET()  {return "views/singup";}
+
     @RequestMapping(path = "/contacts", method = RequestMethod.GET)
     public String contacts_GET(){
         return "views/contacts";
